@@ -8,7 +8,7 @@ import * as moment from 'moment';
   styleUrls: ['./parent.component.css'],
 })
 export class ParentComponent implements OnInit {
-  locale: string = 'en';
+  locale: string = 'th-TH';
   selectedDate: any;
 
   constructor() {}

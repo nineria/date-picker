@@ -8,7 +8,7 @@ import * as moment from 'moment';
 })
 export class DatepickerComponent implements OnInit {
   @Input()
-  locale: string = 'th-TH';
+  locale: string = '';
 
   @Input()
   canChangeNavMonthLogic: any;
@@ -26,7 +26,7 @@ export class DatepickerComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {
-    moment.locale('th-TH');
+    moment.locale(this.locale);
     this.navDate = moment();
     this.makeHeader();
     this.makeGrid();
